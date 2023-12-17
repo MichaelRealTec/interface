@@ -10,7 +10,7 @@ public class RentalService {
 	private Double pricePerHour;
 	private Double pricePerDay;
 	
-	private BrazilTaxService taxService;
+	private TaxService taxService;
 		
 	// Métodos Getters e Setters
 	public void setPricePerHour(Double pricePerHour) {
@@ -29,11 +29,11 @@ public class RentalService {
 		return pricePerDay;
 	}
 	
-	public void setTaxService(BrazilTaxService taxService) {
+	public void setTaxService(TaxService taxService) {
 		this.taxService = taxService;
 	}
 	
-	public BrazilTaxService getTaxService() {
+	public TaxService getTaxService() {
 		return taxService;
 	}
 	
@@ -43,7 +43,7 @@ public class RentalService {
 	}
 	
 	
-	public RentalService(Double pricePerHour, Double pricePerDay, BrazilTaxService taxService) {
+	public RentalService(Double pricePerHour, Double pricePerDay, TaxService taxService) {
 		this.pricePerHour = pricePerHour;
 		this.pricePerDay = pricePerDay;
 		this.taxService = taxService;
